@@ -68,56 +68,49 @@ These files are excluded from the repository using `.gitignore`. You must genera
 ```bash
 git clone https://github.com/Sui-Generis-14/Recipe_Recommendation_System.git
 cd Recipe_Recommendation_System
-
+```
 ### 2. Install Dependencies
+```bash
 pip install pandas streamlit scikit-learn
-
+```
 ### 3. Download the Dataset
 Go to Kaggle and download:
 > RAW_recipes.csv
 
 ### 4. Generate Required .parquet Files
 Run the preprocessing script:
+```bash
 python recipe_recommendation.py
-
+```
 This will create:
-
-recipes_ingtag.parquet
-
-recipes_steps.parquet
-
-recipes_final.parquet
+- recipes_ingtag.parquet
+- recipes_steps.parquet
+- recipes_final.parquet
 
 These files must be present to run the app.
 
-5. Launch the Streamlit App
+### 5. Launch the Streamlit App
+```bash
 streamlit run app.py
+```
 
 You'll be able to:
+- Choose recipe tags
+- Get recipe matches
+- View 10 similar recipes
 
-Choose recipe tags
-
-Get recipe matches
-
-View 10 similar recipes
-
-🗂 Folder Structure
-bash
-Copy
-Edit
+## Folder Structure
+```bash
 RecipeRecommendationSystem/
 ├── recipe_recommendation.py          # Streamlit app
 ├── RecipeRecommendationSystem.ipynb  # Preprocessing and ML logic
 ├── *.parquet                         # Large data files (excluded)
 ├── .gitignore                        # Excludes large files
 └── README.md                         # This file
-
-🚀 Future Enhancements
- Add calorie and nutrition filters
-
-Include recipe images from external APIs
-
-Add fuzzy ingredient matching
-
-Deploy on Streamlit Cloud
+```
+## Future Enhancements:
+- Add calorie and nutrition filters
+- Include recipe images from external APIs
+- Add fuzzy ingredient matching
+- Deploy on Streamlit Cloud
 
