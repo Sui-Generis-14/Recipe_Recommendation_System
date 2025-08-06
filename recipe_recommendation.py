@@ -20,11 +20,11 @@ if 'show_similar_input' not in st.session_state:
 def load_data(path):
     return pd.read_parquet(path)
 
-recipes_ingtag = load_data('/Users/snehauppu/Documents/PythonProjects/RecipeRecommendationSystem/recipes_ingtag.parquet')
-recipes_steps = load_data('/Users/snehauppu/Documents/PythonProjects/RecipeRecommendationSystem/recipes_steps.parquet')
-recipes_final = load_data('/Users/snehauppu/Documents/PythonProjects/RecipeRecommendationSystem/recipes_final.parquet')
+recipes_ingtag = load_data('recipes_ingtag.parquet')
+recipes_steps = load_data('recipes_steps.parquet')
+recipes_final = load_data('recipes_final.parquet')
 
-st.image('/Users/snehauppu/Documents/PythonProjects/RecipeRecommendationSystem/Image.jpeg', use_container_width = True)
+st.image('Image.jpeg', use_container_width = True)
 st.title('Recipe Search & Recommendations')
 
 tag_options = ['60-minutes-or-less', '30-minutes-or-less', '15-minutes-or-less', 'meat', 'poultry', 'vegetables', 
