@@ -12,7 +12,7 @@ The app also suggests **similar recipes** using cosine similarity on preprocesse
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates how **content-based filtering** can be used to build a recipe recommendation engine using tags, ingredients, and textual data.
 
@@ -20,7 +20,7 @@ The backend is implemented in **Python**, the model is developed and preprocesse
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 - **Python**
 - **Pandas** for data cleaning and transformation
@@ -30,7 +30,7 @@ The backend is implemented in **Python**, the model is developed and preprocesse
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 This project uses the **[Food.com Recipes Dataset](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-interactions)** from Kaggle.
 
